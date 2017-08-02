@@ -103,7 +103,7 @@
   #googleMap {
       width: 100%;
       height: 400px;
-    -webkit-filter: grayscale(55%);
+    -webkit-filter: grayscale(50%);
       filter: sepia(75%);
   }  
       
