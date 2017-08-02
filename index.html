@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
   <title>Wheels of the World</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -24,15 +25,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-        <a class="navbar-brand" href="#myPage"><span style="color:yellowgreen">Wheels of the World</span></a>
+        <a class="navbar-brand" href="#myPage"><strong><span style="color:yellowgreen">Wheels of the World</span></strong></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#myPage">HOME</a></li>
-        <li><a href="#band">FERRIS WHEELS</a></li>
+        <li><a href="#wheels">FERRIS WHEELS</a></li>
         <li><a href="#tour">TOUR</a></li>
         <li><a href="#contact">CONTACT</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
     </div>
   </div>
@@ -45,12 +45,14 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="Images/China/china1.jpg" alt="Tianjin" width="1200" height="700">
+        <img src="Images/China/china1.jpg" alt="Tianjin Eye" width="1200" height="700">
         <div class="carousel-caption">
           <h3>Tianjin Eye, China</h3>
           <p>The atmosphere in Tianjin is great.</p>
@@ -66,10 +68,10 @@
       </div>
     
      <div class="item">
-        <img src="Images/LasVegas/vegas2.jpg" alt="Asiatique" width="1200" height="700">
+        <img src="Images/LasVegas/lasvegas0.jpg" alt="High Roller" width="1200" height="700">
         <div class="carousel-caption">
           <h3>High Roller, Las Vegas</h3>
-          <p>Thank you, Las Vegas - What a Ride!</p>
+          <p>Thank you, Chicago - A night we won't forget.</p>
         </div>      
       </div>
     
@@ -77,8 +79,25 @@
         <img src="Images/London/london2.jpg" alt="London Eye" width="1200" height="700">
         <div class="carousel-caption">
           <h3>London Eye, UK</h3>
-            <p>The London Eye is a giant Ferris wheel situated on the banks of the River Thames in London, England.</p>       
+          <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+        </div>      
       </div>
+    
+       <div class="item">
+        <img src="Images/China/china9.jpg" alt="Tianjin Eye" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Tianjin Eye, China</h3>
+          <p>The atmosphere in Tianjin is great.</p>
+        </div>   
+       </div>    
+        
+      <div class="item">
+        <img src="Images/London/london0.jpg" alt="London Eye" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>London Eye, UK</h3>
+          <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+        </div>      
+      </div>  
     </div>
 
     <!-- Left and right controls -->
@@ -90,54 +109,79 @@
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-</div>
+ </div>
 
-<!-- Container (The Band Section) -->
-<div id="band" class="container text-center">
-  <h3>Wheels of the World!</h3>
+<!-- Container (Wheels of the World) -->
+<div id="wheels" class="container text-center">
+  <h3><strong><span style="color:yellowgreen">Wheels of the World!</span></strong></h3>
   <p><em>We love fun!</em></p>
   <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p> Click on the  <strong><span class="glyphicon">&#xe127;</span></strong> images to see amazing details</p>
+  <p> Click on the  <strong><span stye="color:blue" class="glyphicon">&#xe127;</span> images</strong> to see amazing details</p>
   <br>
   <div class="row">
     <div class="col-sm-3">
-      <p class="text-center"><button type="button" class="btn btn-success"><strong><span class="glyphicon">&#xe143;</span> Asiatique Sky</strong></p><br>
+      <p class="text-center"><button type="button" class="btn btn-success"><strong><span class="glyphicon">&#xe143;</span> Tianjin Eye</strong></p><br>
       <a href="#demo" data-toggle="collapse">
-        <img src="Images/China/china340.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="Images/China/china340.jpg" class="img-circle person" alt="Tianjin Eye" width="255" height="255">
       </a>
       <div id="demo" class="collapse">
-        <p>Height: 120m (394ft) </p>
-        <p>Opened: Apr 5, 2009</p>
+        <p><strong><span style="color:burlywood">Location:</span></strong> <span style="color:limegreen"> Yongle Bridge, Ch</span>
+        <p><strong><span style="color:burlywood">Height:</span></strong><span style="color:limegreen"> 120m (394ft)</span></p>
+        <p><strong><span style="color:burlywood">Opened:</span></strong><span style="color:limegreen"> Apr 5, 2009</span></p>
+        <p><strong><span style="color:burlywood">Number of Cabins:</span></strong><span style="color:limegreen"> 48</span></p>
+        <p><strong><span style="color:burlywood">Passengers per Cabin:</span></strong><span style="color:limegreen"> 8</span></p>
+        <p><strong><span style="color:burlywood">Ride Duration:</span></strong><span style="color:limegreen"> 30 min</span></p>
+        <p><strong><span style="color:burlywood">Ticket cost to ride:</span></strong><span style="color:limegreen"> $11.41</span></p>  
+        <p><strong><span style="color:burlywood">Website:</span></strong><span style="color:limegreen"><a href="http://www.tianjinzhiyan.com"> Tianjin Eye!</a></span></p>
       </div>
     </div>
     <div class="col-sm-3">
       <p class="text-center"><button type="button" class="btn btn-success"><strong><span class="glyphicon">&#xe165;</span> Asiatique Sky</strong></p><br>
-      <a href="#demo2" data-toggle="collapse">
-        <img src="Images/Bangkok/bangkok340.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      <a href="#demo1" data-toggle="collapse">
+        <img src="Images/Bangkok/bangkok340.jpg" class="img-circle person" alt="Asiatique Eye" width="255" height="255">
       </a>
-      <div id="demo2" class="collapse">
-        <p>Height: 60m (200ft) </p>
-        <p>Opened: Dec 12, 2012</p>
+      <div id="demo1" class="collapse">
+        <p><strong><span style="color:burlywood">Location:</span></strong> <span style="color:limegreen"> Bangkok, Thailand</span>
+        <p><strong><span style="color:burlywood">Height:</span></strong><span style="color:limegreen"> 60m (200ft)</span></p>
+        <p><strong><span style="color:burlywood">Opened:</span></strong><span style="color:limegreen"> Dec 12, 2012</span></p>
+        <p><strong><span style="color:burlywood">Number of Cabins:</span></strong><span style="color:limegreen"> 42</span></p>
+        <p><strong><span style="color:burlywood">Passengers per Cabin:</span></strong><span style="color:limegreen"> 2 - 5</span></p>
+        <p><strong><span style="color:burlywood">Ride Duration:</span></strong><span style="color:limegreen"> 25 min</span></p>
+        <p><strong><span style="color:burlywood">Ticket cost to ride:</span></strong><span style="color:limegreen"> $12</span></p>  
+        <p><strong><span style="color:burlywood">Website:</span></strong><span style="color:limegreen"><a href="http://www.asiatiquesky.com"> Asiatique Sky!</a></span></p>
       </div>
     </div>
     <div class="col-sm-3">
       <p class="text-center"><button type="button" class="btn btn-success"><strong> <span class="glyphicon">&#xe240;</span> High Roller</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="Images/LasVegas/vegas340.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      <a href="#demo2" data-toggle="collapse">
+        <img src="Images/LasVegas/vegas340.jpg" class="img-circle person" alt="High Roller" width="255" height="255">
       </a>
-      <div id="demo3" class="collapse">
-        <p>Height: 167.6m (550ft) </p>
-        <p>Opened: March 31,2014</p>
+      <div id="demo2" class="collapse">
+         <p><strong><span style="color:burlywood">Location:</span></strong> <span style="color:limegreen"> Las Vegas, Nevada</span>
+         <p><strong><span style="color:burlywood">Height:</span></strong><span style="color:limegreen"> 167.6m (550ft)</span></p>
+         <p><strong><span style="color:burlywood">Opened:</span></strong><span style="color:limegreen"> March 31,2014</span></p>
+         <p><strong><span style="color:burlywood">Number of Cabins:</span></strong><span style="color:limegreen"> 28</span></p>
+         <p><strong><span style="color:burlywood">Passengers per Cabin:</span></strong><span style="color:limegreen"> 40</span></p>
+         <p><strong><span style="color:burlywood">Ride Duration:</span></strong><span style="color:limegreen"> 30 min</span></p>
+         <p><strong><span style="color:burlywood">Ticket cost to ride:</span></strong><span style="color:limegreen"> $25</span></p>
+       
+         <p><strong><span style="color:burlywood">Website:</span></strong><span style="color:limegreen"><a href="http://www.caesars.com/thelinq"> High Lane!</a></span></p>
       </div>
     </div>
     <div class="col-sm-3">
       <p class="text-center"><button type="button" class="btn btn-success"><strong><span class="glyphicon">&#xe143;</span> London Eye</strong></p><br>
-      <a href="#demo4" data-toggle="collapse">
-        <img src="Images/London/london340.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      <a href="#demo3" data-toggle="collapse">
+        <img src="Images/London/london340.jpg" class="img-circle person" alt="London Eye" width="255" height="255">
       </a>
-      <div id="demo4" class="collapse">
-        <p>Height: 135m (443ft) </p>
-        <p>Opened: Mar 9, 2000</p>
+      <div id="demo3" class="collapse">
+        <p><strong><span style="color:burlywood">Location:</span></strong> <span style="color:limegreen"> South Bank, London</span>
+        <p><strong><span style="color:burlywood">Height:</span></strong><span style="color:limegreen"> 135m (443ft)</span></p>
+        <p><strong><span style="color:burlywood">Opened:</span></strong><span style="color:limegreen"> Mar 9, 2000</span></p>
+        <p><strong><span style="color:burlywood">Number of Cabins:</span></strong><span style="color:limegreen"> 32</span></p>
+        <p><strong><span style="color:burlywood">Passengers per Cabin:</span></strong><span style="color:limegreen"> 25</span></p>
+        <p><strong><span style="color:burlywood">Ride Duration:</span></strong><span style="color:limegreen"> 30 min</span></p>
+        <p><strong><span style="color:burlywood">Ticket cost to ride:</span></strong><span style="color:limegreen"> $28</span></p>
+        <p><strong><span style="color:burlywood">Website:</span></strong><span style="color:white"><a href="http://www.londoneye.com"> London Eye!</a><span></p>
       </div>
     </div>
   </div>
@@ -165,7 +209,7 @@
       </div>
       <div class="col-sm-3">
         <div class="thumbnail">
-          <img src="Images/LasVegas/vegas3-50.jpg" alt="High Roller" width="400" height="300">
+          <img src="Images/LasVegas/vegas3.jpg" alt="High Roller" width="400" height="300">
           <p><strong>Las Vegas</strong></p>
           <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
           <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
@@ -255,14 +299,16 @@
 <div id="googleMap"></div>
 <script>
 function myMap() {
-var myCenter = new google.maps.LatLng(18.81271, -12.48046); 
-var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var myCenter = new google.maps.LatLng(51.5009, -0.11953); 
+var mapProp = {center:myCenter, zoom:3, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 var marker = new google.maps.Marker({position:myCenter});
 marker.setMap(map);
+   
+    
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1sZhZ5IEOw7txPNXmAEdeNeiCWoQw0mw&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
@@ -274,7 +320,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <p>Wheels of the World  <span class="glyphicon glyphicon-thumbs-up"> <span class="glyphicon glyphicon-globe"> <a href="https://goo.gl/big-wheels" data-toggle="tooltip" title="Visit our website">goo.gl/big-wheels</a></p><br>
+  <p>Wheels of the World - <span class="glyphicon glyphicon-thumbs-up"> <span class="glyphicon glyphicon-globe"> <a href="https://goo.gl/7m8mZ4" data-toggle="tooltip" title="Visit our website">goo.gl/7m8mZ4</a></p><br>
    <h6>Project Code NYPL © Phase II - New York, NY - 2017</h6>
  </footer>
 
