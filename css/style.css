@@ -104,8 +104,8 @@
   #googleMap {
       width: 100%;
       height: 400px;
-    -webkit-filter: grayscale(56%);
-      filter: sepia(74%);
+    -webkit-filter: grayscale(57%);
+      filter: sepia(73%);
   }  
       
   .navbar {
