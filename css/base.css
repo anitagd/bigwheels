@@ -1,0 +1,12 @@
+/* layout/base.css */
+
+body {
+  margin: 0;
+}
+
+/* vendor/google-maps.css */
+
+.google-maps {
+  height: 0;
+  padding-bottom: 100vh;
+}

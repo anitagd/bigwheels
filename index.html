@@ -115,7 +115,7 @@
 <div id="wheels" class="container text-center">
   <h3><strong><span style="color:yellowgreen">Wheels of the World!</span></strong></h3>
   <p><em>We love fun!</em></p>
-  <p>Wheels of the World Website. Take a look at the largest Ferris Wheels from all across the world. From the High Roller, all the way to the Tianjin Eye, these magnificent wheels are one of the greatest tourist attractions of our modern times.</p>
+  <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   <p> Click on the  <strong><span stye="color:blue" class="glyphicon">&#xe127;</span> images</strong> to see amazing details</p>
   <br>
   <div class="row">
@@ -195,7 +195,7 @@
         <div class="thumbnail">
           <img src="Images/China/china5.jpeg" alt="Tianjin" width="400" height="300">
           <p><strong>China</strong></p>
-          <p>Tianjin Eye is a Ferris Wheel from Tianjin, China.  Construction started in 2007 above Yongle Bridge, over the Hai River.  The main body was completed on 18 December 2007, and the wheel was opened to the public on 7 April 2008.  Tianjin Eye is electrically powered and has 48 passenger capsules, capable of carrying 8 passengers each, and takes 30 minutes to complete a rotation, giving a maximum capacity of 768 passengers per hour.</p>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
           <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
         </div>
       </div>
@@ -203,8 +203,7 @@
         <div class="thumbnail">
           <img src="Images/Bangkok/small.jpg" alt="Asiatique Eye" width="400" height="300">
           <p><strong>Thailand</strong></p>
-          <p>Asiatique Sky was opened to the public on Dec 15, 2012 in Asiatique the Riverfront, Bangkok. The observation wheel is 200 feet tall. There are 42 cabins, which each accommodate between 2-5. Opening hours
-5pm to midnight, daily. The Asiatique Eye Wheel is the latest and greatest lifestyle development on the banks of the Chao Phraya River. Ferris Wheels are for all ages, you can take your kids and they will really have a blast.</p>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
           <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
         </div>
       </div>
@@ -212,7 +211,7 @@
         <div class="thumbnail">
           <img src="Images/LasVegas/vegas3.jpg" alt="High Roller" width="400" height="300">
           <p><strong>Las Vegas</strong></p>
-          <p>Currently the tallest Ferris Wheel in the world since 2008, standing at 550-foot tall. With sweeping 360-degree views of the Las Vegas Valley and The Strip. It was created by the Caesars Entertainment Corporation, for its The Linq promenade area on the Las Vegas Strip. It has a total of 28 cabins, with each cabin being able to accommodating 40 passengers each. High Roller opened to the public on March 31, 2014.  Guests must be 21 and older to ride in a bar cabin.</p>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
           <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
         </div>
       </div>
@@ -220,7 +219,7 @@
         <div class="thumbnail">
           <img src="Images/London/london.jpg" alt="London Eye" width="400" height="300">
           <p><strong>London</strong></p>
-          <p>Europe's tallest Ferris wheel, it adjoins the western end of Jubilee Gardens, on the South Bank of the River Thames between Westminster Bridge and Hungerford Bridge, in the London Borough of Lambeth.It was opened to the public on 1 February 2013. It is the most popular paid tourist attraction in the United Kingdom with over 3.75 million visitors annually. As of January 2015, it has been advertised as the Coca-Cola London Eye.</p>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
           <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
         </div>
       </div>
@@ -296,27 +295,70 @@
   <br>
 </div>
 
-<!-- Add Google Maps -->
-<div id="googleMap"></div>
-<script>
-function myMap() {
-var myCenter = new google.maps.LatLng(51.5009, -0.11953); 
-var mapProp = {center:myCenter, zoom:2, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position:myCenter});
-marker.setMap(map);
 
+    <!-- Add Google Maps -->
+    <div id="googleMap"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('googleMap'), {
+          zoom: 3,
+          center: new google.maps.LatLng(38.433360, 24.409313),
+          mapTypeId: 'roadmap'
+        });
+  
 
+        var iconBase = ' http://maps.google.com/mapfiles/kml/paddle/';
+        var icons = {
+          bangkok: {
+            icon: iconBase + 'blu-diamond.png'
+          },
+          vegas: {
+            icon: iconBase + 'orange-diamond.png'
+          },
+          china: {
+            icon: iconBase + 'pink-diamond.png'
+          },
+          london: {
+            icon: iconBase + 'grn-diamond.png'
+          }
+        };
+          
 
+          
+
+        var features = [
+          {
+            position: new google.maps.LatLng(13.70517, 100.50283),
+            type: 'bangkok'
+          }, {
+            position: new google.maps.LatLng(36.11763, -115.1682),
+            type: 'vegas'
+          }, {
+            position: new google.maps.LatLng(39.15442, 117.18681),
+            type: 'china'
+          }, {
+            position: new google.maps.LatLng(51.503454,-0.119562),
+            type: 'london'
+          }
+        ];
+          
+        
+        // Create markers.
+        features.forEach(function(feature) {
+          var marker = new google.maps.Marker({
+            position: feature.position,
+            icon: icons[feature.type].icon,
+            map: map
+          });
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1sZhZ5IEOw7txPNXmAEdeNeiCWoQw0mw&callback=initMap">
+    </script>   
     
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1sZhZ5IEOw7txPNXmAEdeNeiCWoQw0mw&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
-
+    
     
 <!-- Footer -->
 <footer class="text-center">
